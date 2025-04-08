@@ -1,0 +1,176 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e7fd2, #56b3c2);
+  padding: 20px;
+}
+
+/* Main App Container */
+#app {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Register Section Styling */
+#registerSection {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between Register and Loading */
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-wrap: wrap; /* Wraps fields when there’s not enough space */
+  gap: 20px;
+}
+
+/* Label Styling */
+label {
+  font-size: 1.1rem;
+  color: #555;
+  width: 100%; /* Ensure labels stay on top of the fields */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 48%; /* Makes two fields fit on a row */
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  border-color: #4a90e2;
+}
+
+/* Button Styling */
+button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the button span the full width */
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+/* Styling for Links */
+a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #357ab7;
+}
+
+/* Required Inputs Styling */
+input[required] {
+  border-left: 5px solid #f76c6c;
+}
+
+input[required]:focus {
+  border-color: #f76c6c;
+}
+
+/* Header Styling for Dashboard */
+header {
+  background-color: #4a90e2;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #f76c6c;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+footer a {
+  color: #4a90e2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #357ab7;
+}
+
+/* Animation for App Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
